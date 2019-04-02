@@ -5,10 +5,10 @@
     <system-properties>
         <property name="java.util.logging.config.file" value="WEB-INF/classes/logging.properties"/>
 
-        <property name="jdbc.driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="jdbc.url" value="jdbc:mysql://localhost:3306/testing?serverTimezone=UTC"/>
-        <property name="jdbc.username" value="root"/>
-        <property name="jdbc.password" value="root"/>
+        <property name="spring.datasource.driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="spring.datasource.url" value="jdbc:mysql://localhost:3306/testing?serverTimezone=UTC"/>
+        <property name="spring.datasource.username" value="root"/>
+        <property name="spring.datasource.password" value="root"/>
         <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
 
     </system-properties>
