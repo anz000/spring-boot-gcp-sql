@@ -1,16 +1,17 @@
 spring:
   #MySQL
   datasource:
-    url: jdbc:mysql://localhost:3306/testing?useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/testing?serverTimezone=UTC
     username: root
     password: root
+    driverClassName: com.mysql.jdbc.Driver
 
 
   # The SQL dialect makes Hibernate generate better SQL for the chosen database
   jpa:
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        dialect: org.hibernate.dialect.MySQLDialect
 
 #logging.level.org.springframework.web=DEBUG
 logging:
